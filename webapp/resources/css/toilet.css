@@ -1,0 +1,166 @@
+/* 페이지 타이틀 75px, 
+       타이틀화면의 거리 표시는 12px
+       지도 화면의 타이틀 30px
+       지도 화면의 작은 글씨 13px 
+       마이페이지 소제목 20px
+       제외 전부 16px
+*/
+
+/* 배경 파란색 : rgb(35, 168, 225) / #23a8e1
+       버튼 파란색 : rgb(52, 152, 219)
+       붉은색 : rgb(253, 76, 114) / #FD4C72
+       노란색 : rgb(245, 234, 199)  / #F5EAC7
+       검은(사실 고동색) 글씨 : rgb(57, 35, 27) / #39231B
+       지도화면 배경 노란색 : #fff9e3
+*/
+
+/*
+   input, 버튼 모서리 : 4px
+       지도, 리스트 항목(화장실) : 10px
+*/
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: #23a8e1;
+}
+
+input[type="range"] {
+	-webkit-appearance: none;
+  	width: 485px;
+  	margin : 0;
+  	margin-right : 20px;
+  	border-radius : 10px;
+  	outline : none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+	height : 20px;
+	background-color : #F5EAC7;
+	border-radius : 10px;
+	padding : 0;
+}
+
+input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width : 20px;
+	height : 20px;
+	border-radius : 10px;
+	background-color : #FD4C72;
+	color : #FD4C72;
+	cursor : pointer;
+	margin-top : 0;
+}
+
+.dis {
+  	background-color: #f5eac7;
+  	border-radius: 10px;
+  	width: 60px;
+  	height: 20px;
+  	text-align: center;
+  	padding: 0px;
+  	display: inline-block;
+  	font-size: 12px;
+}
+
+.contents {
+  font-size: 17px;
+  color: white;
+}
+
+.main_title {
+  	font-size: 75px;
+  	color: #f5eac7;
+  	margin-top : 20px;
+  	margin-bottom : 20px;
+}
+
+.container {
+  	position : absolute;
+  	top : 50%;
+  	transform : translateY(-50%);
+  	left : 18%;
+}
+
+.container1 {
+  	margin-top: 50px;
+  	color: #fd4c72;
+  	margin-bottom: 50px;
+  	display : flex;
+  	flex-direction : row;
+  	align-items : center;
+}
+
+.paper {
+	position : absolute;
+  	display: inline-block;
+  	bottom : 0;
+  	right : 15%;
+  	width : 25vw;
+  	
+}
+
+.find {
+  	background-color: #fd4c72;
+  	text-align: center;
+  	border: 0px;
+  	font-size: 19px;
+  	margin: auto;
+  	width: 570px;
+  	height: 60px;
+  	border-radius: 6px;
+  	color : white;
+  	font-weight : bold;
+  	outline : none;
+  	cursor : pointer;
+}
+
+.find:active {
+	background-color : #fd3361;
+}
+
+.disfont {
+  margin-top: 0px;
+}
+
+
+.login_bar {
+  text-align: right;
+}
+
+.logBtn {
+	background-color: transparent;
+	border: 0px;
+	font-size: 16px;
+	cursor: pointer;
+	color: #F5EAC7;
+	padding: 8px 12px;
+	border-radius: 4px;
+	outline : none;
+}
+
+.logBtn:hover {
+  background-color: rgb(39, 132, 238);
+}
+
+@media all and (max-width: 480px) {
+    .paper {
+    	display : none;
+    }
+    
+    .main_title {
+    	font-size : 56px;
+    }
+    
+    .contents {
+    	width : 90vw;
+    	
+    }
+    
+    .container {
+    	left : 5%;
+    }
+    
+    .find {
+    	width : 90vw;
+    }
+}

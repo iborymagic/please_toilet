@@ -1,0 +1,119 @@
+@charset "UTF-8";
+body {
+  background-color: #23a8e1;
+}
+
+.login_bar {
+  text-align: right;
+}
+.logBtn {
+	background-color: transparent;
+	border: 0px;
+	font-size: 16px;
+	cursor: pointer;
+	color: #F5EAC7;
+	padding: 8px 12px;
+	border-radius: 4px;
+	outline : none;
+}
+
+.logBtn:hover {
+  background-color: rgb(39, 132, 238);
+}
+
+.form-container {
+	position : absolute;
+	display : flex;
+ 	flex-direction: column;
+ 	width : 800px;
+ 	height : 600px;
+ 	margin : 0;
+ 	padding : 0;
+ 	left : 50%;
+  	top : 50%;
+  	transform : translate(-50%, -50%);
+}
+
+.title {
+  	color: rgb(245, 234, 199);
+  	font-size: 75px;
+  	font-weight: bold;
+  	margin-bottom : 30px;
+}
+
+input {
+	width : 400px;
+	height : 40px;
+	padding-left : 10px;
+	border-radius : 4px;
+	outline : none;
+	border : none;
+	margin-bottom : 20px;
+}
+
+#id {
+	margin-bottom : 5px;
+}
+
+#submitBtn {
+	width : 410px;
+	height : 45px;
+	background-color : #FD4C72;
+	color : white;
+	border-radius : 4px;
+	outline : none;
+	border : none;
+	font-size : 17px;
+	font-weight : bold;
+	margin-top : 30px;
+	cursor : pointer;
+}
+
+#submitBtn:active {
+	background-color : #fd3361;
+}
+
+#idbox {
+	display : flex;
+	flex-direction : column;
+	margin-bottom : 20px;
+	width : 400px;
+	text-align : right;
+}
+
+#idcheck {
+	width : 200px;
+	background : transparent;
+	font-size : 16px;
+	text-decoration : underline;
+	color : rgb(245, 234, 199);
+	cursor : pointer;
+	margin : 0;
+	padding : 0;
+	transform : translateX(125%);
+}
+
+@media all and (max-width: 480px) {
+    .form-container {
+    	position : absolute;
+    	display : flex;
+    	flex-direction : column;
+    	width : 90vw;
+    	left : 50%;
+    	top : 50%;
+    	transform : translate(-50%, -45%);
+    }
+    
+    .title {
+    	font-size : 50px;
+    }
+    
+    input {
+    	width : 87vw;
+    }
+    
+    #submitBtn {
+    	width : 90vw;
+    }
+}
+

@@ -1,0 +1,152 @@
+@charset "UTF-8";
+body {
+  	background-color: #23a8e1;
+}
+
+.forms-container {
+	position : absolute;
+  	display: flex;
+  	flex-direction : row;
+  	width : 800px;
+  	height : 500px;
+  	margin : 0;
+  	padding : 0;
+  	left : 50%;
+  	top : 50%;
+  	transform : translate(-50%, -50%);
+}
+
+.form-group {
+	display : flex;
+	flex-direction : column;
+	width : 60%;
+}
+
+.forget-group {
+	display : flex;
+	flex-direction : column;
+	width : 40%;
+}
+
+.title {
+	color : #F5EAC7;
+    font-size : 75px;
+}
+
+.form-control {
+	width : 400px;
+	height : 40px;
+	border-radius : 4px;
+	padding-left : 10px;
+	outline : none;
+	border : none;
+	margin-bottom : 20px;
+}
+
+.btn_primary {
+	width : 410px;
+	height : 45px;
+	border-radius : 4px;
+	background-color : #FD4C72;
+	color : white;
+	border : none;
+	outline : none;
+	font-size : 17px;
+	font-weight : bold;
+	cursor : pointer;
+}
+
+.btn_primary:active {
+	background-color : #fd3361;
+}
+
+.login_bar {
+  	text-align: right;
+}
+.logBtn {
+	background-color: transparent;
+	border: 0px;
+	font-size: 16px;
+	cursor: pointer;
+	color : #F5EAC7;
+	padding: 8px 12px;
+	border-radius: 4px;
+	outline : none;
+	cursor : pointer;
+}
+
+.logBtn:hover {
+  	background-color: rgb(39, 132, 238);
+}
+
+#login {
+	color : #F5EAC7;
+	font-size : 15px;
+}
+
+#autologin { 
+	margin-bottom : 30px;
+}
+
+a {
+  	color : #F5EAC7;
+  	text-decoration : underline;
+}
+
+a:active {
+	color : #F5EAC7;
+}
+
+#id_forget {
+	position : absolute;
+	top : 40%;
+}
+
+#pw_forget {
+	position : absolute;
+	top : 52%;
+}
+
+#signup {
+	position : absolute;
+	top : 74%;
+}
+
+@media all and (max-width: 480px) {
+    .forms-container {
+    	position : absolute;
+    	display : flex;
+    	flex-direction : column;
+    	width : 90vw;
+    	left : 50%;
+    	top : 50%;
+    	transform : translate(-50%, -50%);
+    }
+    
+    .title {
+    	font-size : 50px;
+    }
+    
+    #id_forget {
+    	position : absolute;
+    	top : 74%;
+    }
+    
+    #pw_forget {
+    	position : absolute;
+    	top : 80%;
+    }
+    
+    #signup {
+    	position : absolute;
+    	top : 86%;
+    }
+    
+    .form-control {
+    	width : 87vw;
+    }
+    
+    .btn_primary {
+    	width : 90vw;
+    }
+}

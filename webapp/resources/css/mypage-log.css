@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+#mypage-logs {
+	transform : translate(0, 5%);
+	width : 100%;
+    display : flex;
+    flex-wrap : wrap;
+    justify-content : space-between;
+}
+
+@media all and (max-width: 480px) {
+	#mypage-logs {
+		transform : translate(0%, 6%);
+		width : 90vw;
+		height : 60vh;
+		overflow : auto;
+	}
+	
+	#mypage-logs::-webkit-scrollbar {
+		-webkit-appearance : none;
+		background : transparent;
+	}
+}

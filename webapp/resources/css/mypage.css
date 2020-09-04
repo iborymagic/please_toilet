@@ -1,0 +1,179 @@
+@CHARSET "UTF-8";
+body {
+    background-color : #23a8e1;
+}
+
+#container {
+    position : absolute;
+    left : 50%;
+    top : 50%;
+    transform : translate(-50%, -50%);
+    display : flex;
+    flex-direction : column;
+    width : 1000px;
+    height : 500px;
+}
+
+#title {
+    display : flex;
+    flex-direction : row;
+}
+
+#title-mypage {
+    color : #F5EAC7;
+    font-size : 75px;
+    display : inline-block;
+    margin : 0;
+    padding : 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#subtitles {
+    display : grid;
+    grid-template-columns : 1fr 1fr 1fr;
+    grid-gap : 10px;
+    text-align: center;
+    width : 600px;
+    height : 50px;
+    list-style: none;
+    margin : 0;
+    padding : 0;
+    margin-left : 50px;
+    margin-top : 50px;
+}
+
+.subtitle {
+    width : 100%;
+    color : #F5EAC7;
+    font-size : 1.2rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    transition : all .3s ease;
+}
+
+.subtitle p {
+    display : inline;
+    text-decoration: none;
+    color : #F5EAC7;
+    cursor : pointer;
+}
+
+.subtitle a:active {
+    display : inline;
+    color : #F5EAC7;
+}
+
+.subtitle span {
+    position : relative;
+    cursor : pointer;
+}
+
+.subtitle span::after {
+    position : absolute;
+    content : "";
+    display : block;
+    width : 0%;
+    transition : all .3s ease;
+    left : 50%;
+}
+
+.subtitle span:hover::after {
+    display : block;
+    position : absolute;
+    left : 0%;
+    background : #F5EAC7;
+    height : 7px;
+    content : "";
+    width : 100%;
+    bottom : -30%;
+    transition : all .3s ease;
+}
+.inputs {
+    width : 300px;
+    height : 40px;
+    font-size : 0.9rem;
+    padding-left : 15px;
+    border-radius : 4px;
+    border : none;
+    display : block;
+    margin : 1.5rem;
+    outline : none;
+    transform : translate(-6%, 50%);
+}
+
+input[type=submit] {
+    width : 320px;
+    height : 40px;
+    font-size : 1rem;
+    font-weight : bold;
+    border-radius: 4px;
+    border : none;
+    outline : none;
+    cursor : pointer;
+    background-color : #FD4C72;
+    color : white;
+    transform : translate(1%, 100%);
+}
+
+input[type=submit]:active {
+    background-color : #f5305a;
+}
+
+.login_bar {
+  text-align: right;
+}
+.logBtn {
+	background-color: transparent;
+	border: 0px;
+	font-size: 16px;
+	cursor: pointer;
+	color: #F5EAC7;
+	padding: 8px 12px;
+	border-radius: 4px;
+	outline : none;
+}
+
+.logBtn:hover {
+  background-color: rgb(39, 132, 238);
+}
+
+@media all and (max-width: 480px) {	
+	#title {
+		flex-direction : column;
+	}
+	
+	#title-mypage {
+		font-size : 50px;
+	}
+	
+	#subtitles {
+		position : absolute;
+		transform : translate(-15%, 70%);
+		grid-gap : 5px;
+		width : 98vw;
+		font-size : 16px;
+	}
+	
+	#container {
+	    position : absolute;
+	    left : 50%;
+	    top : 50%;
+	    transform : translate(-50%, -50%);
+	    display : flex;
+	    flex-direction : column;
+	    width : 90vw;
+	    height : 70vh;
+	}
+	
+	#body-mypage {
+		transform : translateY(10%);
+	}
+	
+	.inputs {
+		width : 87vw;
+	}
+	
+	input[type=submit] {
+		width : 90vw;
+		transform : translate(0%, 100%);
+	}
+}
