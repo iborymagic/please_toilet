@@ -2,7 +2,7 @@
 현재 위치를 기반으로 주변 화장실의 위치를 알려주는 서비스  
 
 ### 사용 기술
-언어 : HTML/CSS/Javascript  
+언어 : HTML, CSS, Javascript  
 프레임워크 : Spring  
 라이브러리 : jQuery, KAKAO Map  
 
