@@ -5,6 +5,8 @@
 언어 : HTML, CSS, Javascript  
 프레임워크 : Spring  
 라이브러리 : jQuery, KAKAO Map  
+서버 : Apache Tomcat  
+데이터베이스 : MySQL  
 
 ### 데이터
 서울 열린데이터 광장 - 서울시 공중화장실 위치 정보
