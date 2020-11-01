@@ -25,7 +25,6 @@
 4. 마이페이지(비밀번호 변경, 화장실 이용 내역 조회, 회원 탈퇴)
 5. 비밀번호 찾기 / 아이디 찾기
 
-![1](https://user-images.githubusercontent.com/42052110/97814622-191aeb00-1ccd-11eb-8049-8bc9c05210b7.PNG)
 ![2](https://user-images.githubusercontent.com/42052110/97814652-1d470880-1ccd-11eb-87e7-cb90fd8d9470.PNG)
 ![3](https://user-images.githubusercontent.com/42052110/97814655-1d470880-1ccd-11eb-88fa-e832396158b8.PNG)
 ![4](https://user-images.githubusercontent.com/42052110/97814658-1ddf9f00-1ccd-11eb-993b-954c86857736.PNG)
